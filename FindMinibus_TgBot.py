@@ -136,9 +136,9 @@ async def search_main():
 
         if find:
             await bot.send_message(TG_MY_URL, text, parse_mode='MarkdownV2') 
+            await bot.send_message(TG_MY_URL, '⛔️ *Мониторинг остановлен\\!*', parse_mode='MarkdownV2') 
             scheduler.remove_all_jobs()
             scheduler.shutdown(wait=False)
-            await bot.send_message(TG_MY_URL, '⛔️ *Мониторинг остановлен\\!*', parse_mode='MarkdownV2') 
         else:
             await bot.send_message(TG_MY_URL, f'{text}🙅🏻 *Свободных мест нет\\!*', parse_mode='MarkdownV2') 
     except Exception as e:
