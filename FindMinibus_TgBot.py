@@ -17,8 +17,8 @@ CITY = {
     'Минск' : 'c625144',
     'Дятлово' : 'c628658'
 }
-TG_BOT_TOKEN = '8418015159:AAFkDdde3QsWinhSg6Sa866C5onf_wAYSxU' # @botfather
-TG_MY_URL = '762753264' # @userinfobot
+TG_BOT_TOKEN = '' # @botfather
+TG_MY_URL = '' # @userinfobot
 
 scheduler = AsyncIOScheduler(timezon='Europe/Minsk')
 bot = Bot(token=TG_BOT_TOKEN)
