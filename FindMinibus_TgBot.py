@@ -53,7 +53,7 @@ def initialized():
 
 
 @dp.message(Command('set_settings'))
-async def set_settings(command: CommandObject):
+async def set_settings(text: Message, command: CommandObject):
     global year, month, day, time, start_place, finish_place, passengers
 
     try:
